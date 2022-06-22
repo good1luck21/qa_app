@@ -1,0 +1,26 @@
+<h1>Questions#new</h1>
+<p>Find me in app/views/questions/new.html.erb</p>
+<%= form_for @question, url: question_create_path do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %><br />
+  回答１：
+  <select name="question[answer][]">
+    <option value="sublime">sublime</option>
+    <option value="Laravel">Laravel</option>
+    <option value="React">React</option>
+    <option value="View">View</option>
+  </select>
+  回答２：<select name="question[answer][]">
+    <option value="sublime2">sublime2</option>
+    <option value="Laravel2">Laravel2</option>
+    <option value="React2">React2</option>
+    <option value="View2">View2</option>
+  </select>
+  回答3：<select name="question[answer][]">
+    <option value="sublime3">sublime3</option>
+    <option value="Laravel3">Laravel3</option>
+    <option value="React3">React3</option>
+    <option value="View3">View3</option>
+  </select><br>
+  <%= f.submit %>
+<% end %>

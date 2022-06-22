@@ -1,0 +1,14 @@
+問題を作りたい！！！！！！
+  - 画面
+    rails g controller questions new index
+  - モデル
+    rails g model question content:text
+    rails g model answer content:string question_id:integer
+  [x] モデルの紐付け
+  [x] postのルート
+  [x] root localhost変更
+  [x]△ form_forの@questionsを定義する(questions_controller)
+  [x] フォームでpostのURLを指定する
+  [x] コントローラーにcreate書く
+  [x] showのルーティング
+  [x] show page

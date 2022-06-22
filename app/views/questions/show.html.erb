@@ -1,0 +1,5 @@
+<h1><%= @question.content %>のページです</h1>
+回答候補一覧：<br/>
+<% @question.answers.each do |a| %>
+  <%= a.content %>
+<% end %>
